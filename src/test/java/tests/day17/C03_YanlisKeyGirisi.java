@@ -10,5 +10,12 @@ public class C03_YanlisKeyGirisi {
     public void test01(){
 
         Driver.getDriver().get(ConfigReader.getProperty("HMCurl"));//nulPointerException verir
+
+        //eger key olarak girdigimiz String configuration.properties dosyasinda yoksa
+        //HMCUrl yerine HMCurl yazarsak
+        //ConfigReader.getProperty() o key'i bulamaz
+        //ve nullPointerExcepyion firlatir
+
+
     }
 }

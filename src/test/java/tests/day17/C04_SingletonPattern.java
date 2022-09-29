@@ -28,7 +28,7 @@ public class C04_SingletonPattern {
     // olusturur ve bu constructor'u private yapariz.
 
 
-        Driver driver=new Driver();
+
 
 
 

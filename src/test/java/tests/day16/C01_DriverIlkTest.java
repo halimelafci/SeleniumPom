@@ -8,7 +8,7 @@ public class C01_DriverIlkTest {
 
     // driver class'i sayesinde eski driver kulanilmiyor.
     // artık driver'e ihtiyac varsa Driver.getDriver() yazacagiz
-
+/*
     public void test01(){
         //amazona gidelim
         Driver.getDriver().get("https://amazon.com");
@@ -34,4 +34,9 @@ public class C01_DriverIlkTest {
         Assert.assertTrue(actualuRL.contains("bestbuy"));
         Driver.closeDriver();
     }
+
+
+
+ */
+
 }

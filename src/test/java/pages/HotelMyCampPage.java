@@ -45,7 +45,8 @@ public class HotelMyCampPage {
     @FindBy(xpath ="//button[@id='btnSubmit']" )
     public WebElement addHotelSaveButonu;
 
-public void girisYap(){
+     public void girisYap(){
+
     Driver.getDriver().get(ConfigReader.getProperty("HMCUrl"));
     ilkLoginLinki.click();
     userNameBox.sendKeys(ConfigReader.getProperty("HMCValidUserName"));

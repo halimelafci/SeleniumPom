@@ -40,4 +40,16 @@ public class C01_WebTableDinamikLocate {
 
 
     }
+
+    @Test
+    public void sutunYazirTesti(){
+        hotelMyCampPage=new HotelMyCampPage();
+        hotelMyCampPage.girisYap();
+
+        // 3. sutun numarasi verdigimde bana tum sutun'u yazdirsin
+
+        hmcWebTablePage.sutunYazdir(4);
+        Driver.closeDriver();
+
+    }
 }

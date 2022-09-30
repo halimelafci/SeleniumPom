@@ -50,4 +50,12 @@ public class HMCWebTablePage {
     }
 
 
+  public void sutunYazdir(int sutun) {
+
+      int satirSayisi=satirlarListesi.size();
+
+      for (int i=1; i<=satirSayisi ;i++){
+        System.out.println(hucreWebElementGetir(i, sutun));
+      }
+  }
 }

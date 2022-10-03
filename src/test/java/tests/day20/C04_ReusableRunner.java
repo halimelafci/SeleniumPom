@@ -1,6 +1,7 @@
 package tests.day20;
 
 
+import org.testng.Assert;
 import utils.ReusableMethods;
 
 public class C04_ReusableRunner {

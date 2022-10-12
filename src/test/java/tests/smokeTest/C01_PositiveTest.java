@@ -8,7 +8,7 @@ import utils.Driver;
 public class C01_PositiveTest {
 
     @Test
-    public void positiveLoginTesti(){
+    public void positiveLoginTesti() throws InterruptedException {
 
         //1) com.techproed altinda bir package olustur : smoketest
         // 2) Bir Class olustur : PositiveTest
@@ -18,8 +18,9 @@ public class C01_PositiveTest {
 
         Driver.getDriver().get(ConfigReader.getProperty("HMCUrl"));
         HotelMyCampPage hotelMyCampPage=new HotelMyCampPage();
-        hotelMyCampPage.loginButonu.click();
+        hotelMyCampPage.ilkLoginLinki.click();
         hotelMyCampPage.userNameBox.sendKeys(ConfigReader.getProperty("HMCValidUserName"));
+        Thread.sleep(3000);
         hotelMyCampPage.passwordBox.sendKeys(ConfigReader.getProperty("HMCValidPassword"));
     }
 }

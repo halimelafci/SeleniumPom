@@ -21,7 +21,7 @@ public class C02_NavigateTest {
 
     }
 
-    @Test
+    @Test(groups ="miniSmok")
     public void yanliskullaniciTesti(){
         Driver.getDriver().get(ConfigReader.getProperty("HMCUrl"));
         hotelMyCampPage  =new HotelMyCampPage();
